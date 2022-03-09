@@ -1,13 +1,13 @@
 {
-    "app_name": "PyOneDark - Modern GUI",
+    "app_name": "KINEMATIC SYNTHESIS OF AN UNDERCARRIAGE",
     "version" : "v1.0.0",
-    "copyright" : "By: Wanderson M. Pimenta",
-    "year" : 2021,
-    "theme_name" : "default",
+    "copyright" : "By: Huamán Huamán - Fernandez Dominguez",
+    "year" : 2022,
+    "theme_name" : "bright_theme",
     "custom_title_bar": true,
     "startup_size": [
-        1400,
-        720
+        1200,
+        700
     ],
     "minimum_size": [
         960,

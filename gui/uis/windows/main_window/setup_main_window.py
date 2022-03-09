@@ -92,22 +92,6 @@ class SetupMainWindow:
             "is_active" : False
         },
         {
-            "btn_icon" : "icon_folder_open.svg",
-            "btn_id" : "btn_open_file",
-            "btn_text" : "Open File",
-            "btn_tooltip" : "Open file",
-            "show_top" : True,
-            "is_active" : False
-        },
-        {
-            "btn_icon" : "icon_save.svg",
-            "btn_id" : "btn_save",
-            "btn_text" : "Save File",
-            "btn_tooltip" : "Save file",
-            "show_top" : True,
-            "is_active" : False
-        },
-        {
             "btn_icon" : "icon_info.svg",
             "btn_id" : "btn_info",
             "btn_text" : "Information",
@@ -128,12 +112,6 @@ class SetupMainWindow:
      # ADD TITLE BAR MENUS
     # ///////////////////////////////////////////////////////////////
     add_title_bar_menus = [
-        {
-            "btn_icon" : "icon_search.svg",
-            "btn_id" : "btn_search",
-            "btn_tooltip" : "Search",
-            "is_active" : False
-        },
         {
             "btn_icon" : "icon_settings.svg",
             "btn_id" : "btn_top_settings",
