@@ -17,7 +17,7 @@
 # IMPORT PACKAGES AND MODULES
 # ///////////////////////////////////////////////////////////////
 from gui.widgets.py_table_widget.py_table_widget import PyTableWidget
-from . functions_main_window import *
+from .functions_main_window import *
 import sys
 import os
 
@@ -39,11 +39,12 @@ from gui.widgets import *
 
 # LOAD UI MAIN
 # ///////////////////////////////////////////////////////////////
-from . ui_main import *
+from .ui_main import *
 
 # MAIN FUNCTIONS 
 # ///////////////////////////////////////////////////////////////
-from . functions_main_window import *
+from .functions_main_window import *
+
 
 # PY WINDOW
 # ///////////////////////////////////////////////////////////////
@@ -60,12 +61,12 @@ class SetupMainWindow:
     # ///////////////////////////////////////////////////////////////
     add_left_menus = [
         {
-            "btn_icon" : "icon_home.svg",
-            "btn_id" : "btn_home",
-            "btn_text" : "Home",
-            "btn_tooltip" : "Home page",
-            "show_top" : True,
-            "is_active" : True
+            "btn_icon": "icon_home.svg",
+            "btn_id": "btn_home",
+            "btn_text": "Home",
+            "btn_tooltip": "Home page",
+            "show_top": True,
+            "is_active": True
         },
         {
             "btn_icon": "icon_calculate.svg",
@@ -84,31 +85,31 @@ class SetupMainWindow:
             "is_active": False
         },
         {
-            "btn_icon" : "icon_file.svg",
-            "btn_id" : "btn_new_file",
-            "btn_text" : "Report",
-            "btn_tooltip" : "Generate report",
-            "show_top" : True,
-            "is_active" : False
+            "btn_icon": "icon_file.svg",
+            "btn_id": "btn_report",
+            "btn_text": "Report",
+            "btn_tooltip": "Generate report",
+            "show_top": True,
+            "is_active": False
         },
         {
-            "btn_icon" : "icon_settings.svg",
-            "btn_id" : "btn_settings",
-            "btn_text" : "Settings",
-            "btn_tooltip" : "Open settings",
-            "show_top" : False,
-            "is_active" : False
+            "btn_icon": "icon_settings.svg",
+            "btn_id": "btn_settings",
+            "btn_text": "Settings",
+            "btn_tooltip": "Open settings",
+            "show_top": False,
+            "is_active": False
         }
     ]
 
-     # ADD TITLE BAR MENUS
+    # ADD TITLE BAR MENUS
     # ///////////////////////////////////////////////////////////////
     add_title_bar_menus = [
         {
-            "btn_icon" : "icon_settings.svg",
-            "btn_id" : "btn_top_settings",
-            "btn_tooltip" : "Top settings",
-            "is_active" : False
+            "btn_icon": "icon_light.svg",
+            "btn_id": "btn_change_theme",
+            "btn_tooltip": "Change theme",
+            "is_active": False
         }
     ]
 
@@ -129,7 +130,7 @@ class SetupMainWindow:
         # APP TITLE
         # ///////////////////////////////////////////////////////////////
         self.setWindowTitle(self.settings["app_name"])
-        
+
         # REMOVE TITLE BAR
         # ///////////////////////////////////////////////////////////////
         if self.settings["custom_title_bar"]:
@@ -182,9 +183,9 @@ class SetupMainWindow:
         MainFunctions.set_page(self, self.ui.load_pages.page_1)
         MainFunctions.set_left_column_menu(
             self,
-            menu = self.ui.left_column.menus.menu_1,
-            title = "Settings Left Column",
-            icon_path = Functions.set_svg_icon("icon_settings.svg")
+            menu=self.ui.left_column.menus.menu_1,
+            title="Settings Left Column",
+            icon_path=Functions.set_svg_icon("icon_settings.svg")
         )
         MainFunctions.set_right_column_menu(self, self.ui.right_column.menu_1)
 

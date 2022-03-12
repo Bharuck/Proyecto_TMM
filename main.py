@@ -76,26 +76,51 @@ class MainWindow(QMainWindow):
         # GET BT CLICKED
         btn = SetupMainWindow.setup_btns(self)
 
+        # LEFT MENU
+        # /////////////////////////////////////////////////////////////////
+
+        # HOME BTN
+        if btn.objectName() == "btn_home":
+            # Select Menu
+            self.ui.left_menu.select_only_one(btn.objectName())
+
+            # Load Page 1
+            MainFunctions.set_page(self, self.ui.load_pages.page_1)
+
+        # WIDGETS BTN
+        if btn.objectName() == "btn_calculus":
+            # Select Menu
+            self.ui.left_menu.select_only_one(btn.objectName())
+
+            # Load Page 2
+            MainFunctions.set_page(self, self.ui.load_pages.page_2)
+
+        # LOAD USER PAGE
+        if btn.objectName() == "btn_graph":
+            # Select Menu
+            self.ui.left_menu.select_only_one(btn.objectName())
+
+            # Load Page 3
+            MainFunctions.set_page(self, self.ui.load_pages.page_3)
+
+        # REPORT BTN
+        if btn.objectName() == "btn_report":
+            # Select Menu
+            self.ui.left_menu.select_only_one(btn.objectName())
+
+            # Load Page 4
+            MainFunctions.set_page(self, self.ui.load_pages.page_4)
+
         # TITLE BAR MENU
         # ///////////////////////////////////////////////////////////////
         
         # SETTINGS TITLE BAR
-        if btn.objectName() == "btn_top_settings":
-            # Toogle Active
-            if not MainFunctions.right_column_is_visible(self):
-                btn.set_active(True)
+        if btn.objectName() == "btn_change_theme":
+            # Change theme
+            f = open("settings.json","r")
+            print(f.read())
 
-                # Show / Hide
-                MainFunctions.toggle_right_column(self)
-            else:
-                btn.set_active(False)
 
-                # Show / Hide
-                MainFunctions.toggle_right_column(self)
-
-            # Get Left Menu Btn            
-            top_settings = MainFunctions.get_left_menu_btn(self, "btn_settings")
-            top_settings.set_active_tab(False)            
 
         # DEBUG
         print(f"Button {btn.objectName()}, clicked!")
