@@ -106,9 +106,9 @@ class SetupMainWindow:
     # ///////////////////////////////////////////////////////////////
     add_title_bar_menus = [
         {
-            "btn_icon": "icon_light.svg",
-            "btn_id": "btn_change_theme",
-            "btn_tooltip": "Change theme",
+            "btn_icon": "icon_search.svg",
+            "btn_id": "btn_search",
+            "btn_tooltip": "Search",
             "is_active": False
         }
     ]

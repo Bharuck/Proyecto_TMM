@@ -1,35 +1,28 @@
-{
-    "app_name": "KINEMATIC SYNTHESIS OF AN UNDERCARRIAGE",
-    "version" : "v1.0.0",
-    "copyright" : "By: Cossi Yglesias - Fernandez Dominguez - Juarez Lopez - Huamán Huamán - ",
-    "year" : 2022,
-    "theme_name" : "bright_theme",
-    "custom_title_bar": true,
-    "startup_size": [
-        1200,
-        700
-    ],
-    "minimum_size": [
-        960,
-        540
-    ],
-    "lef_menu_size" : {
-        "minimum" : 50,
-        "maximum" : 240
-    },
-    "left_menu_content_margins" : 3,
-    "left_column_size" : {
-        "minimum" : 0,
-        "maximum" : 240
-    },
-    "right_column_size" : {
-        "minimum" : 0,
-        "maximum" : 240
-    },
-    "time_animation" : 500,
-    "font" : {
-        "family" : "Segoe UI",
-        "title_size" : 10,
-        "text_size" : 9
-    }
+{"app_name": "KINEMATIC SYNTHESIS OF AN UNDERCARRIAGE",
+  "version": "v1.0.0",
+  "copyright": "By: Cossi Yglesias - Fernandez Dominguez - Juarez Lopez - Juarez -Huaman Huaman  ",
+  "year": 2022,
+  "theme_name": "bright_theme",
+  "custom_title_bar": true,
+  "startup_size": [1200, 700],
+  "minimum_size": [960, 540],
+  "lef_menu_size": {
+    "minimum": 50,
+    "maximum": 240
+  },
+  "left_menu_content_margins": 3,
+  "left_column_size": {
+    "minimum": 0,
+    "maximum": 240
+  },
+  "right_column_size": {
+    "minimum": 0,
+    "maximum": 240
+  },
+  "time_animation": 500,
+  "font": {
+    "family": "Segoe UI",
+    "title_size": 10,
+    "text_size": 9
+  }
 }
