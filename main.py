@@ -73,7 +73,7 @@ class MainWindow(QMainWindow):
 
     # LEFT MENU BTN IS CLICKED
     # Run function when btn is clicked
-    # Check funtion by object name / btn_id
+    # Check function by object name / btn_id
     # ///////////////////////////////////////////////////////////////
     def btn_clicked(self):
         # GET BT CLICKED
@@ -116,26 +116,17 @@ class MainWindow(QMainWindow):
 
         # TITLE BAR MENU
         # ///////////////////////////////////////////////////////////////
-        
+
         # SETTINGS TITLE BAR
-        if btn.objectName() == "btn_change_theme":
-            # Change theme
-            f = open("settings.json","r")
-            settings = json.load(f)
-            theme = (settings['theme_name'])
-
-            if theme == "bright_theme":
-                print('tema claro')
-
-            if theme == "default":
-                print('tema oscuro')
+        if btn.objectName() == "btn_search":
+            print('hola')
 
         # DEBUG
         print(f"Button {btn.objectName()}, clicked!")
 
     # LEFT MENU BTN IS RELEASED
     # Run function when btn is released
-    # Check funtion by object name / btn_id
+    # Check function by object name / btn_id
     # ///////////////////////////////////////////////////////////////
     def btn_released(self):
         # GET BT CLICKED
@@ -163,7 +154,7 @@ if __name__ == "__main__":
     # APPLICATION
     # ///////////////////////////////////////////////////////////////
     app = QApplication(sys.argv)
-    app.setWindowIcon(QIcon("icon.ico"))
+    # app.setWindowIcon(QIcon("icon.ico"))
     window = MainWindow()
 
     # EXEC APP
