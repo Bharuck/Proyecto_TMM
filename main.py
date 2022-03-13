@@ -16,6 +16,8 @@
 
 # IMPORT PACKAGES AND MODULES
 # ///////////////////////////////////////////////////////////////
+import json
+
 from gui.uis.windows.main_window.functions_main_window import *
 import sys
 import os
@@ -51,6 +53,7 @@ class MainWindow(QMainWindow):
         # SETUP MAIN WINDOw
         # Load widgets from "gui\uis\main_window\ui_main.py"
         # ///////////////////////////////////////////////////////////////
+        self.dragPos = None
         self.ui = UI_MainWindow()
         self.ui.setup_ui(self)
 
@@ -118,9 +121,14 @@ class MainWindow(QMainWindow):
         if btn.objectName() == "btn_change_theme":
             # Change theme
             f = open("settings.json","r")
-            print(f.read())
+            settings = json.load(f)
+            theme = (settings['theme_name'])
 
+            if theme == "bright_theme":
+                print('tema claro')
 
+            if theme == "default":
+                print('tema oscuro')
 
         # DEBUG
         print(f"Button {btn.objectName()}, clicked!")
@@ -160,4 +168,4 @@ if __name__ == "__main__":
 
     # EXEC APP
     # ///////////////////////////////////////////////////////////////
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
