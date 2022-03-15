@@ -38,6 +38,7 @@ class SetupMainWindow:
         # SETUP MAIN WINDOw
         # Load widgets from "gui\uis\main_window\ui_main.py"
         # ///////////////////////////////////////////////////////////////
+        self.calculate_button = None
         self.ui = UI_MainWindow()
         self.ui.setup_ui(self)
 
@@ -200,6 +201,346 @@ class SetupMainWindow:
         # ///////////////////////////////////////////////////////////////
         themes = Themes()
         self.themes = themes.items
+
+        # ADD CUSTOM WIDGETS IN INPUTS FRAME
+        # ///////////////////////////////////////////////////////////////
+        # BUTTON 1
+        self.icon_theta_1 = PyIconButton(
+            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
+            parent=self,
+            app_parent=self.ui.central_widget,
+            tooltip_text="theta 1",
+            width=40,
+            height=40,
+            radius=8,
+            dark_one=self.themes["app_color"]["dark_one"],
+            icon_color=self.themes["app_color"]["icon_color"],
+            icon_color_hover=self.themes["app_color"]["icon_hover"],
+            icon_color_pressed=self.themes["app_color"]["white"],
+            icon_color_active=self.themes["app_color"]["icon_active"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_hover=self.themes["app_color"]["dark_three"],
+            bg_color_pressed=self.themes["app_color"]["green"],
+        )
+        self.theta_1_edit = PyLineEdit(
+            text="",
+            place_holder_text="value theta 1",
+            radius=8,
+            border_size=2,
+            color=self.themes["app_color"]["text_foreground"],
+            selection_color=self.themes["app_color"]["white"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_active=self.themes["app_color"]["dark_three"],
+            context_color=self.themes["app_color"]["context_color"]
+        )
+        #
+        self.icon_theta_2 = PyIconButton(
+            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
+            parent=self,
+            app_parent=self.ui.central_widget,
+            tooltip_text="theta 2",
+            width=40,
+            height=40,
+            radius=8,
+            dark_one=self.themes["app_color"]["dark_one"],
+            icon_color=self.themes["app_color"]["icon_color"],
+            icon_color_hover=self.themes["app_color"]["icon_hover"],
+            icon_color_pressed=self.themes["app_color"]["white"],
+            icon_color_active=self.themes["app_color"]["icon_active"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_hover=self.themes["app_color"]["dark_three"],
+            bg_color_pressed=self.themes["app_color"]["green"],
+        )
+        self.theta_2_edit = PyLineEdit(
+            text="",
+            place_holder_text="value theta 2",
+            radius=8,
+            border_size=2,
+            color=self.themes["app_color"]["text_foreground"],
+            selection_color=self.themes["app_color"]["white"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_active=self.themes["app_color"]["dark_three"],
+            context_color=self.themes["app_color"]["context_color"]
+        )
+        #
+        self.icon_theta_3 = PyIconButton(
+            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
+            parent=self,
+            app_parent=self.ui.central_widget,
+            tooltip_text="theta 3",
+            width=40,
+            height=40,
+            radius=8,
+            dark_one=self.themes["app_color"]["dark_one"],
+            icon_color=self.themes["app_color"]["icon_color"],
+            icon_color_hover=self.themes["app_color"]["icon_hover"],
+            icon_color_pressed=self.themes["app_color"]["white"],
+            icon_color_active=self.themes["app_color"]["icon_active"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_hover=self.themes["app_color"]["dark_three"],
+            bg_color_pressed=self.themes["app_color"]["green"],
+        )
+        self.theta_3_edit = PyLineEdit(
+            text="",
+            place_holder_text="value theta 3",
+            radius=8,
+            border_size=2,
+            color=self.themes["app_color"]["text_foreground"],
+            selection_color=self.themes["app_color"]["white"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_active=self.themes["app_color"]["dark_three"],
+            context_color=self.themes["app_color"]["context_color"]
+        )
+        self.icon_P1 = PyIconButton(
+            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
+            parent=self,
+            app_parent=self.ui.central_widget,
+            tooltip_text="Point 1",
+            width=40,
+            height=40,
+            radius=8,
+            dark_one=self.themes["app_color"]["dark_one"],
+            icon_color=self.themes["app_color"]["icon_color"],
+            icon_color_hover=self.themes["app_color"]["icon_hover"],
+            icon_color_pressed=self.themes["app_color"]["white"],
+            icon_color_active=self.themes["app_color"]["icon_active"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_hover=self.themes["app_color"]["dark_three"],
+            bg_color_pressed=self.themes["app_color"]["green"],
+        )
+        self.P1_x_edit = PyLineEdit(
+            text="",
+            place_holder_text="value P1_x",
+            radius=8,
+            border_size=2,
+            color=self.themes["app_color"]["text_foreground"],
+            selection_color=self.themes["app_color"]["white"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_active=self.themes["app_color"]["dark_three"],
+            context_color=self.themes["app_color"]["context_color"]
+        )
+        self.P1_y_edit = PyLineEdit(
+            text="",
+            place_holder_text="value P1_y",
+            radius=8,
+            border_size=2,
+            color=self.themes["app_color"]["text_foreground"],
+            selection_color=self.themes["app_color"]["white"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_active=self.themes["app_color"]["dark_three"],
+            context_color=self.themes["app_color"]["context_color"]
+        )
+        #
+        self.icon_P2 = PyIconButton(
+            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
+            parent=self,
+            app_parent=self.ui.central_widget,
+            tooltip_text="Point 2",
+            width=40,
+            height=40,
+            radius=8,
+            dark_one=self.themes["app_color"]["dark_one"],
+            icon_color=self.themes["app_color"]["icon_color"],
+            icon_color_hover=self.themes["app_color"]["icon_hover"],
+            icon_color_pressed=self.themes["app_color"]["white"],
+            icon_color_active=self.themes["app_color"]["icon_active"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_hover=self.themes["app_color"]["dark_three"],
+            bg_color_pressed=self.themes["app_color"]["green"],
+        )
+        self.P2_x_edit = PyLineEdit(
+            text="",
+            place_holder_text="value P2_x",
+            radius=8,
+            border_size=2,
+            color=self.themes["app_color"]["text_foreground"],
+            selection_color=self.themes["app_color"]["white"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_active=self.themes["app_color"]["dark_three"],
+            context_color=self.themes["app_color"]["context_color"]
+        )
+        self.P2_y_edit = PyLineEdit(
+            text="",
+            place_holder_text="value P2_y",
+            radius=8,
+            border_size=2,
+            color=self.themes["app_color"]["text_foreground"],
+            selection_color=self.themes["app_color"]["white"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_active=self.themes["app_color"]["dark_three"],
+            context_color=self.themes["app_color"]["context_color"]
+        )
+        self.icon_P3 = PyIconButton(
+            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
+            parent=self,
+            app_parent=self.ui.central_widget,
+            tooltip_text="Point 3",
+            width=40,
+            height=40,
+            radius=8,
+            dark_one=self.themes["app_color"]["dark_one"],
+            icon_color=self.themes["app_color"]["icon_color"],
+            icon_color_hover=self.themes["app_color"]["icon_hover"],
+            icon_color_pressed=self.themes["app_color"]["white"],
+            icon_color_active=self.themes["app_color"]["icon_active"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_hover=self.themes["app_color"]["dark_three"],
+            bg_color_pressed=self.themes["app_color"]["green"],
+        )
+        self.P3_x_edit = PyLineEdit(
+            text="",
+            place_holder_text="value P3_x",
+            radius=8,
+            border_size=2,
+            color=self.themes["app_color"]["text_foreground"],
+            selection_color=self.themes["app_color"]["white"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_active=self.themes["app_color"]["dark_three"],
+            context_color=self.themes["app_color"]["context_color"]
+        )
+        self.P3_y_edit = PyLineEdit(
+            text="",
+            place_holder_text="value P3_y",
+            radius=8,
+            border_size=2,
+            color=self.themes["app_color"]["text_foreground"],
+            selection_color=self.themes["app_color"]["white"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_active=self.themes["app_color"]["dark_three"],
+            context_color=self.themes["app_color"]["context_color"]
+        )
+         #///////////////////////////
+        self.icon_O2 = PyIconButton(
+            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
+            parent=self,
+            app_parent=self.ui.central_widget,
+            tooltip_text="Point O2",
+            width=40,
+            height=40,
+            radius=8,
+            dark_one=self.themes["app_color"]["dark_one"],
+            icon_color=self.themes["app_color"]["icon_color"],
+            icon_color_hover=self.themes["app_color"]["icon_hover"],
+            icon_color_pressed=self.themes["app_color"]["white"],
+            icon_color_active=self.themes["app_color"]["icon_active"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_hover=self.themes["app_color"]["dark_three"],
+            bg_color_pressed=self.themes["app_color"]["green"],
+        )
+        self.O2_x_edit = PyLineEdit(
+            text="",
+            place_holder_text="value O2_x",
+            radius=8,
+            border_size=2,
+            color=self.themes["app_color"]["text_foreground"],
+            selection_color=self.themes["app_color"]["white"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_active=self.themes["app_color"]["dark_three"],
+            context_color=self.themes["app_color"]["context_color"]
+        )
+        self.O2_y_edit = PyLineEdit(
+            text="",
+            place_holder_text="value O2_y",
+            radius=8,
+            border_size=2,
+            color=self.themes["app_color"]["text_foreground"],
+            selection_color=self.themes["app_color"]["white"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_active=self.themes["app_color"]["dark_three"],
+            context_color=self.themes["app_color"]["context_color"]
+        )
+        # /////////////////////////////////////////////////////////////
+        self.icon_O4 = PyIconButton(
+            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
+            parent=self,
+            app_parent=self.ui.central_widget,
+            tooltip_text="Point O4",
+            width=40,
+            height=40,
+            radius=8,
+            dark_one=self.themes["app_color"]["dark_one"],
+            icon_color=self.themes["app_color"]["icon_color"],
+            icon_color_hover=self.themes["app_color"]["icon_hover"],
+            icon_color_pressed=self.themes["app_color"]["white"],
+            icon_color_active=self.themes["app_color"]["icon_active"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_hover=self.themes["app_color"]["dark_three"],
+            bg_color_pressed=self.themes["app_color"]["green"],
+        )
+        self.O4_x_edit = PyLineEdit(
+            text="",
+            place_holder_text="value O4_x",
+            radius=8,
+            border_size=2,
+            color=self.themes["app_color"]["text_foreground"],
+            selection_color=self.themes["app_color"]["white"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_active=self.themes["app_color"]["dark_three"],
+            context_color=self.themes["app_color"]["context_color"]
+        )
+        self.O4_y_edit = PyLineEdit(
+            text="",
+            place_holder_text="value O4_y",
+            radius=8,
+            border_size=2,
+            color=self.themes["app_color"]["text_foreground"],
+            selection_color=self.themes["app_color"]["white"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_active=self.themes["app_color"]["dark_three"],
+            context_color=self.themes["app_color"]["context_color"]
+        )
+        # Editing
+        self.icon_theta_1.setMinimumHeight(30); self.theta_1_edit.setMinimumHeight(30)
+        self.icon_theta_2.setMinimumHeight(30); self.theta_2_edit.setMinimumHeight(30)
+        self.icon_theta_3.setMinimumHeight(30); self.theta_3_edit.setMinimumHeight(30)
+
+        self.icon_P1.setMinimumHeight(30); self.P1_x_edit.setMinimumHeight(30); self.P1_y_edit.setMinimumHeight(30)
+        self.icon_P2.setMinimumHeight(30); self.P2_x_edit.setMinimumHeight(30); self.P2_y_edit.setMinimumHeight(30)
+        self.icon_P3.setMinimumHeight(30); self.P3_x_edit.setMinimumHeight(30); self.P3_y_edit.setMinimumHeight(30)
+
+        self.icon_O2.setMinimumHeight(30); self.O2_x_edit.setMinimumHeight(30); self.O2_y_edit.setMinimumHeight(30)
+        self.icon_O4.setMinimumHeight(30); self.O4_x_edit.setMinimumHeight(30); self.O4_y_edit.setMinimumHeight(30)
+
+        # ////////////////////////////////////////
+        # ADD CUSTOM WIDGETS IN CENTRAL FRAME
+        # ///////////////////////////////////////////////////////////////
+        self.calculate_button = PyPushButton(
+            text="Calculate",
+            radius=8,
+            color=self.themes["app_color"]["text_foreground"],
+            bg_color=self.themes["app_color"]["dark_one"],
+            bg_color_hover=self.themes["app_color"]["dark_three"],
+            bg_color_pressed=self.themes["app_color"]["dark_four"]
+        )
+        self.calculate_button.setMinimumHeight(40)
+        self.calculate_button.setMinimumWidth(80)
+
+        # Add to left layout
+        self.ui.load_pages.theta1_layout.addWidget(self.icon_theta_1)
+        self.ui.load_pages.theta1_layout.addWidget(self.theta_1_edit)
+        self.ui.load_pages.theta2_layout.addWidget(self.icon_theta_2)
+        self.ui.load_pages.theta2_layout.addWidget(self.theta_2_edit)
+        self.ui.load_pages.theta3_layout.addWidget(self.icon_theta_3)
+        self.ui.load_pages.theta3_layout.addWidget(self.theta_3_edit)
+        self.ui.load_pages.P1_layout.addWidget(self.icon_P1)
+        self.ui.load_pages.P1_layout.addWidget(self.P1_x_edit)
+        self.ui.load_pages.P1_layout.addWidget(self.P1_y_edit)
+        self.ui.load_pages.P2_layout.addWidget(self.icon_P2)
+        self.ui.load_pages.P2_layout.addWidget(self.P2_x_edit)
+        self.ui.load_pages.P2_layout.addWidget(self.P2_y_edit)
+        self.ui.load_pages.P3_layout.addWidget(self.icon_P3)
+        self.ui.load_pages.P3_layout.addWidget(self.P3_x_edit)
+        self.ui.load_pages.P3_layout.addWidget(self.P3_y_edit)
+        self.ui.load_pages.O2_layout.addWidget(self.icon_O2)
+        self.ui.load_pages.O2_layout.addWidget(self.O2_x_edit)
+        self.ui.load_pages.O2_layout.addWidget(self.O2_y_edit)
+        self.ui.load_pages.O4_layout.addWidget(self.icon_O4)
+        self.ui.load_pages.O4_layout.addWidget(self.O4_x_edit)
+        self.ui.load_pages.O4_layout.addWidget(self.O4_y_edit)
+
+        # Add to central layout
+        self.ui.load_pages.button_layout.addWidget(self.calculate_button)
+
 
         # ///////////////////////////////////////////////////////////////
         # END - EXAMPLE CUSTOM WIDGETS

@@ -31,299 +31,241 @@ class Ui_MainPages(object):
         self.pages.setObjectName(u"pages")
         self.page_1 = QWidget()
         self.page_1.setObjectName(u"page_1")
-        self.page_1.setStyleSheet(u"font-size: 14pt;background:lightgreen;")
+        self.page_1.setStyleSheet(u"font-size: 14pt")
         self.page_1_layout = QVBoxLayout(self.page_1)
         self.page_1_layout.setSpacing(5)
         self.page_1_layout.setObjectName(u"page_1_layout")
         self.page_1_layout.setContentsMargins(5, 5, 5, 5)
+        self.welcome_base = QFrame(self.page_1)
+        self.welcome_base.setObjectName(u"welcome_base")
+        self.welcome_base.setMinimumSize(QSize(300, 150))
+        self.welcome_base.setMaximumSize(QSize(300, 150))
+        self.welcome_base.setFrameShape(QFrame.NoFrame)
+        self.welcome_base.setFrameShadow(QFrame.Raised)
+        self.center_page_layout = QVBoxLayout(self.welcome_base)
+        self.center_page_layout.setSpacing(10)
+        self.center_page_layout.setObjectName(u"center_page_layout")
+        self.center_page_layout.setContentsMargins(0, 0, 0, 0)
+        self.logo = QFrame(self.welcome_base)
+        self.logo.setObjectName(u"logo")
+        self.logo.setMinimumSize(QSize(300, 120))
+        self.logo.setMaximumSize(QSize(300, 120))
+        self.logo.setFrameShape(QFrame.NoFrame)
+        self.logo.setFrameShadow(QFrame.Raised)
+        self.logo_layout = QVBoxLayout(self.logo)
+        self.logo_layout.setSpacing(0)
+        self.logo_layout.setObjectName(u"logo_layout")
+        self.logo_layout.setContentsMargins(0, 0, 0, 0)
+
+        self.center_page_layout.addWidget(self.logo)
+
+        self.label = QLabel(self.welcome_base)
+        self.label.setObjectName(u"label")
+        self.label.setAlignment(Qt.AlignCenter)
+
+        self.center_page_layout.addWidget(self.label)
+
+
+        self.page_1_layout.addWidget(self.welcome_base, 0, Qt.AlignHCenter)
+
         self.pages.addWidget(self.page_1)
         self.page_2 = QWidget()
         self.page_2.setObjectName(u"page_2")
-        self.page_2.setStyleSheet(u"font-size: 14pt;")
         self.page_2_layout = QVBoxLayout(self.page_2)
         self.page_2_layout.setSpacing(5)
         self.page_2_layout.setObjectName(u"page_2_layout")
         self.page_2_layout.setContentsMargins(5, 5, 5, 5)
-        self.Distribuitor = QFrame(self.page_2)
-        self.Distribuitor.setObjectName(u"Distribuitor")
-        self.Distribuitor.setEnabled(False)
-        self.Distribuitor.setFrameShape(QFrame.StyledPanel)
-        self.Distribuitor.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout = QHBoxLayout(self.Distribuitor)
-        self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.in_frame = QFrame(self.Distribuitor)
-        self.in_frame.setObjectName(u"in_frame")
-        self.in_frame.setEnabled(False)
-        self.in_frame.setMinimumSize(QSize(250, 500))
-        self.in_frame.setMaximumSize(QSize(250, 500))
-        self.in_frame.setFrameShape(QFrame.StyledPanel)
-        self.in_frame.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_2 = QVBoxLayout(self.in_frame)
-        self.verticalLayout_2.setSpacing(5)
-        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.verticalLayout_2.setContentsMargins(5, 5, 5, 5)
-        self.inputs = QLabel(self.in_frame)
-        self.inputs.setObjectName(u"inputs")
-        self.inputs.setLayoutDirection(Qt.LeftToRight)
-
-        self.verticalLayout_2.addWidget(self.inputs)
-
-        self.frame = QFrame(self.in_frame)
+        self.frame = QFrame(self.page_2)
         self.frame.setObjectName(u"frame")
-        self.frame.setStyleSheet(u"font-size: 14pt;background:orange;")
-        self.frame.setFrameShape(QFrame.StyledPanel)
+        self.frame.setFrameShape(QFrame.NoFrame)
         self.frame.setFrameShadow(QFrame.Raised)
-
-        self.verticalLayout_2.addWidget(self.frame)
-
-        self.frame_2 = QFrame(self.in_frame)
+        self.horizontalLayout = QHBoxLayout(self.frame)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.frame_2 = QFrame(self.frame)
         self.frame_2.setObjectName(u"frame_2")
-        self.frame_2.setStyleSheet(u"font-size: 14pt;background:green;")
-        self.frame_2.setFrameShape(QFrame.StyledPanel)
+        self.frame_2.setMinimumSize(QSize(250, 0))
+        self.frame_2.setMaximumSize(QSize(250, 16777215))
+        self.frame_2.setFrameShape(QFrame.NoFrame)
         self.frame_2.setFrameShadow(QFrame.Raised)
-
-        self.verticalLayout_2.addWidget(self.frame_2)
-
-        self.frame_3 = QFrame(self.in_frame)
-        self.frame_3.setObjectName(u"frame_3")
-        self.frame_3.setStyleSheet(u"font-size: 14pt;background:green;")
-        self.frame_3.setFrameShape(QFrame.StyledPanel)
-        self.frame_3.setFrameShadow(QFrame.Raised)
-
-        self.verticalLayout_2.addWidget(self.frame_3)
-
-        self.frame_4 = QFrame(self.in_frame)
-        self.frame_4.setObjectName(u"frame_4")
-        self.frame_4.setStyleSheet(u"font-size: 14pt;background:green;")
-        self.frame_4.setFrameShape(QFrame.StyledPanel)
-        self.frame_4.setFrameShadow(QFrame.Raised)
-
-        self.verticalLayout_2.addWidget(self.frame_4)
-
-        self.frame_9 = QFrame(self.in_frame)
-        self.frame_9.setObjectName(u"frame_9")
-        self.frame_9.setStyleSheet(u"font-size: 14pt;background:orange;")
-        self.frame_9.setFrameShape(QFrame.StyledPanel)
-        self.frame_9.setFrameShadow(QFrame.Raised)
-
-        self.verticalLayout_2.addWidget(self.frame_9)
-
-        self.frame_5 = QFrame(self.in_frame)
-        self.frame_5.setObjectName(u"frame_5")
-        self.frame_5.setStyleSheet(u"font-size: 14pt;background:green;")
-        self.frame_5.setFrameShape(QFrame.StyledPanel)
-        self.frame_5.setFrameShadow(QFrame.Raised)
-
-        self.verticalLayout_2.addWidget(self.frame_5)
-
-        self.frame_7 = QFrame(self.in_frame)
-        self.frame_7.setObjectName(u"frame_7")
-        self.frame_7.setStyleSheet(u"font-size: 14pt;background:green;")
-        self.frame_7.setFrameShape(QFrame.StyledPanel)
-        self.frame_7.setFrameShadow(QFrame.Raised)
-
-        self.verticalLayout_2.addWidget(self.frame_7)
-
-        self.frame_8 = QFrame(self.in_frame)
-        self.frame_8.setObjectName(u"frame_8")
-        self.frame_8.setStyleSheet(u"font-size: 14pt;background:green;")
-        self.frame_8.setFrameShape(QFrame.StyledPanel)
-        self.frame_8.setFrameShadow(QFrame.Raised)
-
-        self.verticalLayout_2.addWidget(self.frame_8)
-
-        self.frame_10 = QFrame(self.in_frame)
-        self.frame_10.setObjectName(u"frame_10")
-        self.frame_10.setStyleSheet(u"font-size: 14pt;background:orange;")
-        self.frame_10.setFrameShape(QFrame.StyledPanel)
-        self.frame_10.setFrameShadow(QFrame.Raised)
-
-        self.verticalLayout_2.addWidget(self.frame_10)
-
-        self.frame_11 = QFrame(self.in_frame)
-        self.frame_11.setObjectName(u"frame_11")
-        self.frame_11.setStyleSheet(u"font-size: 14pt;background:green;")
-        self.frame_11.setFrameShape(QFrame.StyledPanel)
-        self.frame_11.setFrameShadow(QFrame.Raised)
-
-        self.verticalLayout_2.addWidget(self.frame_11)
-
-        self.frame_12 = QFrame(self.in_frame)
-        self.frame_12.setObjectName(u"frame_12")
-        self.frame_12.setStyleSheet(u"font-size: 14pt;background:green;")
-        self.frame_12.setFrameShape(QFrame.StyledPanel)
-        self.frame_12.setFrameShadow(QFrame.Raised)
-
-        self.verticalLayout_2.addWidget(self.frame_12)
-
-
-        self.horizontalLayout.addWidget(self.in_frame)
-
-        self.central_frame = QFrame(self.Distribuitor)
-        self.central_frame.setObjectName(u"central_frame")
-        self.central_frame.setMinimumSize(QSize(0, 0))
-        self.central_frame.setFrameShape(QFrame.StyledPanel)
-        self.central_frame.setFrameShadow(QFrame.Raised)
-        self.verticalLayout = QVBoxLayout(self.central_frame)
-        self.verticalLayout.setSpacing(5)
+        self.verticalLayout = QVBoxLayout(self.frame_2)
         self.verticalLayout.setObjectName(u"verticalLayout")
-        self.verticalLayout.setContentsMargins(5, 5, 5, 5)
-        self.frame_16 = QFrame(self.central_frame)
-        self.frame_16.setObjectName(u"frame_16")
-        self.frame_16.setMinimumSize(QSize(0, 35))
-        self.frame_16.setMaximumSize(QSize(16777215, 50))
-        self.frame_16.setStyleSheet(u"font-size: 14pt;background:orange;")
-        self.frame_16.setFrameShape(QFrame.StyledPanel)
-        self.frame_16.setFrameShadow(QFrame.Raised)
+        self.label_2 = QLabel(self.frame_2)
+        self.label_2.setObjectName(u"label_2")
+        font = QFont()
+        font.setPointSize(14)
+        self.label_2.setFont(font)
 
-        self.verticalLayout.addWidget(self.frame_16)
+        self.verticalLayout.addWidget(self.label_2, 0, Qt.AlignHCenter)
 
-        self.frame_6 = QFrame(self.central_frame)
-        self.frame_6.setObjectName(u"frame_6")
-        self.frame_6.setMaximumSize(QSize(16777215, 300))
-        self.frame_6.setStyleSheet(u"font-size: 14pt;background:red;")
-        self.frame_6.setFrameShape(QFrame.StyledPanel)
-        self.frame_6.setFrameShadow(QFrame.Raised)
+        self.label_5 = QLabel(self.frame_2)
+        self.label_5.setObjectName(u"label_5")
 
-        self.verticalLayout.addWidget(self.frame_6)
+        self.verticalLayout.addWidget(self.label_5, 0, Qt.AlignHCenter)
 
-        self.frame_17 = QFrame(self.central_frame)
-        self.frame_17.setObjectName(u"frame_17")
-        self.frame_17.setMinimumSize(QSize(0, 35))
-        self.frame_17.setMaximumSize(QSize(16777215, 50))
-        self.frame_17.setStyleSheet(u"font-size: 14pt;background:orange;")
-        self.frame_17.setFrameShape(QFrame.StyledPanel)
-        self.frame_17.setFrameShadow(QFrame.Raised)
+        self.theta1_layout = QHBoxLayout()
+        self.theta1_layout.setObjectName(u"theta1_layout")
 
-        self.verticalLayout.addWidget(self.frame_17)
+        self.verticalLayout.addLayout(self.theta1_layout)
+
+        self.theta2_layout = QHBoxLayout()
+        self.theta2_layout.setObjectName(u"theta2_layout")
+
+        self.verticalLayout.addLayout(self.theta2_layout)
+
+        self.theta3_layout = QHBoxLayout()
+        self.theta3_layout.setObjectName(u"theta3_layout")
+
+        self.verticalLayout.addLayout(self.theta3_layout)
+
+        self.label_6 = QLabel(self.frame_2)
+        self.label_6.setObjectName(u"label_6")
+
+        self.verticalLayout.addWidget(self.label_6, 0, Qt.AlignHCenter)
+
+        self.P1_layout = QHBoxLayout()
+        self.P1_layout.setObjectName(u"P1_layout")
+
+        self.verticalLayout.addLayout(self.P1_layout)
+
+        self.P2_layout = QHBoxLayout()
+        self.P2_layout.setObjectName(u"P2_layout")
+
+        self.verticalLayout.addLayout(self.P2_layout)
+
+        self.P3_layout = QHBoxLayout()
+        self.P3_layout.setObjectName(u"P3_layout")
+
+        self.verticalLayout.addLayout(self.P3_layout)
+
+        self.label_7 = QLabel(self.frame_2)
+        self.label_7.setObjectName(u"label_7")
+
+        self.verticalLayout.addWidget(self.label_7, 0, Qt.AlignHCenter)
+
+        self.O2_layout = QHBoxLayout()
+        self.O2_layout.setObjectName(u"O2_layout")
+
+        self.verticalLayout.addLayout(self.O2_layout)
+
+        self.O4_layout = QHBoxLayout()
+        self.O4_layout.setObjectName(u"O4_layout")
+
+        self.verticalLayout.addLayout(self.O4_layout)
 
 
-        self.horizontalLayout.addWidget(self.central_frame)
+        self.horizontalLayout.addWidget(self.frame_2)
 
-        self.in_frame_2 = QFrame(self.Distribuitor)
-        self.in_frame_2.setObjectName(u"in_frame_2")
-        self.in_frame_2.setEnabled(False)
-        self.in_frame_2.setMinimumSize(QSize(250, 500))
-        self.in_frame_2.setMaximumSize(QSize(250, 500))
-        self.in_frame_2.setFrameShape(QFrame.StyledPanel)
-        self.in_frame_2.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_3 = QVBoxLayout(self.in_frame_2)
-        self.verticalLayout_3.setSpacing(5)
+        self.frame_3 = QFrame(self.frame)
+        self.frame_3.setObjectName(u"frame_3")
+        self.frame_3.setFrameShape(QFrame.NoFrame)
+        self.frame_3.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_2 = QVBoxLayout(self.frame_3)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.label_3 = QLabel(self.frame_3)
+        self.label_3.setObjectName(u"label_3")
+
+        self.verticalLayout_2.addWidget(self.label_3)
+
+        self.button_layout = QHBoxLayout()
+        self.button_layout.setObjectName(u"button_layout")
+
+        self.verticalLayout_2.addLayout(self.button_layout)
+
+
+        self.horizontalLayout.addWidget(self.frame_3)
+
+        self.frame_4 = QFrame(self.frame)
+        self.frame_4.setObjectName(u"frame_4")
+        self.frame_4.setMinimumSize(QSize(300, 0))
+        self.frame_4.setMaximumSize(QSize(300, 16777215))
+        self.frame_4.setFrameShape(QFrame.NoFrame)
+        self.frame_4.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_3 = QVBoxLayout(self.frame_4)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-        self.verticalLayout_3.setContentsMargins(5, 5, 5, 5)
-        self.outputs = QLabel(self.in_frame_2)
-        self.outputs.setObjectName(u"outputs")
-        self.outputs.setLayoutDirection(Qt.LeftToRight)
+        self.label_4 = QLabel(self.frame_4)
+        self.label_4.setObjectName(u"label_4")
 
-        self.verticalLayout_3.addWidget(self.outputs)
+        self.verticalLayout_3.addWidget(self.label_4, 0, Qt.AlignHCenter)
 
-        self.frame_13 = QFrame(self.in_frame_2)
-        self.frame_13.setObjectName(u"frame_13")
-        self.frame_13.setStyleSheet(u"font-size: 14pt;background:orange;")
-        self.frame_13.setFrameShape(QFrame.StyledPanel)
-        self.frame_13.setFrameShadow(QFrame.Raised)
+        self.input1_layout_2 = QHBoxLayout()
+        self.input1_layout_2.setObjectName(u"input1_layout_2")
 
-        self.verticalLayout_3.addWidget(self.frame_13)
+        self.verticalLayout_3.addLayout(self.input1_layout_2)
 
-        self.frame_14 = QFrame(self.in_frame_2)
-        self.frame_14.setObjectName(u"frame_14")
-        self.frame_14.setStyleSheet(u"font-size: 14pt;background:green;")
-        self.frame_14.setFrameShape(QFrame.StyledPanel)
-        self.frame_14.setFrameShadow(QFrame.Raised)
+        self.input1_layout_3 = QHBoxLayout()
+        self.input1_layout_3.setObjectName(u"input1_layout_3")
 
-        self.verticalLayout_3.addWidget(self.frame_14)
+        self.verticalLayout_3.addLayout(self.input1_layout_3)
 
-        self.frame_18 = QFrame(self.in_frame_2)
-        self.frame_18.setObjectName(u"frame_18")
-        self.frame_18.setStyleSheet(u"font-size: 14pt;background:green;")
-        self.frame_18.setFrameShape(QFrame.StyledPanel)
-        self.frame_18.setFrameShadow(QFrame.Raised)
+        self.input1_layout_4 = QHBoxLayout()
+        self.input1_layout_4.setObjectName(u"input1_layout_4")
 
-        self.verticalLayout_3.addWidget(self.frame_18)
+        self.verticalLayout_3.addLayout(self.input1_layout_4)
 
-        self.frame_19 = QFrame(self.in_frame_2)
-        self.frame_19.setObjectName(u"frame_19")
-        self.frame_19.setStyleSheet(u"font-size: 14pt;background:green;")
-        self.frame_19.setFrameShape(QFrame.StyledPanel)
-        self.frame_19.setFrameShadow(QFrame.Raised)
+        self.input1_layout_5 = QHBoxLayout()
+        self.input1_layout_5.setObjectName(u"input1_layout_5")
 
-        self.verticalLayout_3.addWidget(self.frame_19)
+        self.verticalLayout_3.addLayout(self.input1_layout_5)
 
-        self.frame_20 = QFrame(self.in_frame_2)
-        self.frame_20.setObjectName(u"frame_20")
-        self.frame_20.setStyleSheet(u"font-size: 14pt;background:orange;")
-        self.frame_20.setFrameShape(QFrame.StyledPanel)
-        self.frame_20.setFrameShadow(QFrame.Raised)
+        self.input1_layout_6 = QHBoxLayout()
+        self.input1_layout_6.setObjectName(u"input1_layout_6")
 
-        self.verticalLayout_3.addWidget(self.frame_20)
+        self.verticalLayout_3.addLayout(self.input1_layout_6)
 
-        self.frame_21 = QFrame(self.in_frame_2)
-        self.frame_21.setObjectName(u"frame_21")
-        self.frame_21.setStyleSheet(u"font-size: 14pt;background:green;")
-        self.frame_21.setFrameShape(QFrame.StyledPanel)
-        self.frame_21.setFrameShadow(QFrame.Raised)
+        self.input1_layout_7 = QHBoxLayout()
+        self.input1_layout_7.setObjectName(u"input1_layout_7")
 
-        self.verticalLayout_3.addWidget(self.frame_21)
+        self.verticalLayout_3.addLayout(self.input1_layout_7)
 
-        self.frame_22 = QFrame(self.in_frame_2)
-        self.frame_22.setObjectName(u"frame_22")
-        self.frame_22.setStyleSheet(u"font-size: 14pt;background:green;")
-        self.frame_22.setFrameShape(QFrame.StyledPanel)
-        self.frame_22.setFrameShadow(QFrame.Raised)
+        self.input1_layout_8 = QHBoxLayout()
+        self.input1_layout_8.setObjectName(u"input1_layout_8")
 
-        self.verticalLayout_3.addWidget(self.frame_22)
+        self.verticalLayout_3.addLayout(self.input1_layout_8)
 
-        self.frame_23 = QFrame(self.in_frame_2)
-        self.frame_23.setObjectName(u"frame_23")
-        self.frame_23.setStyleSheet(u"font-size: 14pt;background:green;")
-        self.frame_23.setFrameShape(QFrame.StyledPanel)
-        self.frame_23.setFrameShadow(QFrame.Raised)
+        self.input1_layout_9 = QHBoxLayout()
+        self.input1_layout_9.setObjectName(u"input1_layout_9")
 
-        self.verticalLayout_3.addWidget(self.frame_23)
+        self.verticalLayout_3.addLayout(self.input1_layout_9)
 
-        self.frame_24 = QFrame(self.in_frame_2)
-        self.frame_24.setObjectName(u"frame_24")
-        self.frame_24.setStyleSheet(u"font-size: 14pt;background:orange;")
-        self.frame_24.setFrameShape(QFrame.StyledPanel)
-        self.frame_24.setFrameShadow(QFrame.Raised)
+        self.input1_layout_10 = QHBoxLayout()
+        self.input1_layout_10.setObjectName(u"input1_layout_10")
 
-        self.verticalLayout_3.addWidget(self.frame_24)
+        self.verticalLayout_3.addLayout(self.input1_layout_10)
 
-        self.frame_25 = QFrame(self.in_frame_2)
-        self.frame_25.setObjectName(u"frame_25")
-        self.frame_25.setStyleSheet(u"font-size: 14pt;background:green;")
-        self.frame_25.setFrameShape(QFrame.StyledPanel)
-        self.frame_25.setFrameShadow(QFrame.Raised)
+        self.input1_layout_11 = QHBoxLayout()
+        self.input1_layout_11.setObjectName(u"input1_layout_11")
 
-        self.verticalLayout_3.addWidget(self.frame_25)
+        self.verticalLayout_3.addLayout(self.input1_layout_11)
 
-        self.frame_26 = QFrame(self.in_frame_2)
-        self.frame_26.setObjectName(u"frame_26")
-        self.frame_26.setStyleSheet(u"font-size: 14pt;background:green;")
-        self.frame_26.setFrameShape(QFrame.StyledPanel)
-        self.frame_26.setFrameShadow(QFrame.Raised)
+        self.input1_layout_12 = QHBoxLayout()
+        self.input1_layout_12.setObjectName(u"input1_layout_12")
 
-        self.verticalLayout_3.addWidget(self.frame_26)
+        self.verticalLayout_3.addLayout(self.input1_layout_12)
 
 
-        self.horizontalLayout.addWidget(self.in_frame_2)
+        self.horizontalLayout.addWidget(self.frame_4)
 
 
-        self.page_2_layout.addWidget(self.Distribuitor)
+        self.page_2_layout.addWidget(self.frame)
 
         self.pages.addWidget(self.page_2)
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
-        self.page_3.setStyleSheet(u"font-size: 14pt;background:lightblue;")
+        self.page_3.setStyleSheet(u"QFrame {\n"
+"	font-size: 16pt;\n"
+"}")
         self.page_3_layout = QVBoxLayout(self.page_3)
         self.page_3_layout.setObjectName(u"page_3_layout")
+        self.empty_page_label = QLabel(self.page_3)
+        self.empty_page_label.setObjectName(u"empty_page_label")
+        font1 = QFont()
+        font1.setPointSize(16)
+        self.empty_page_label.setFont(font1)
+        self.empty_page_label.setAlignment(Qt.AlignCenter)
+
+        self.page_3_layout.addWidget(self.empty_page_label)
+
         self.pages.addWidget(self.page_3)
-        self.page_4 = QWidget()
-        self.page_4.setObjectName(u"page_4")
-        self.page_4.setStyleSheet(u"font-size: 14pt;background:yellow;")
-        self.page_4_Layout = QVBoxLayout(self.page_4)
-        self.page_4_Layout.setObjectName(u"page_4_Layout")
-        self.pages.addWidget(self.page_4)
 
         self.main_pages_layout.addWidget(self.pages)
 
@@ -338,7 +280,13 @@ class Ui_MainPages(object):
 
     def retranslateUi(self, MainPages):
         MainPages.setWindowTitle(QCoreApplication.translate("MainPages", u"Form", None))
-        self.inputs.setText(QCoreApplication.translate("MainPages", u"Inputs", None))
-        self.outputs.setText(QCoreApplication.translate("MainPages", u"Outputs", None))
+        self.label.setText(QCoreApplication.translate("MainPages", u"Welcome To PyOneDark GUI", None))
+        self.label_2.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:14pt; font-weight:700;\">INPUTS</span></p></body></html>", None))
+        self.label_5.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:11pt;\">Angles Theta</span></p></body></html>", None))
+        self.label_6.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:11pt;\">Positions</span></p></body></html>", None))
+        self.label_7.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:11pt;\">inicial Points</span></p></body></html>", None))
+        self.label_3.setText(QCoreApplication.translate("MainPages", u"TextLabel", None))
+        self.label_4.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:14pt; font-weight:700;\">OUTPUTS</span></p></body></html>", None))
+        self.empty_page_label.setText(QCoreApplication.translate("MainPages", u"Empty Page", None))
     # retranslateUi
 
