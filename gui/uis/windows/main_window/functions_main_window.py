@@ -73,7 +73,7 @@ class MainFunctions():
     # LEDT AND RIGHT COLUMNS / SHOW / HIDE
     # ///////////////////////////////////////////////////////////////
     def toggle_left_column(self):
-        # GET ACTUAL CLUMNS SIZE
+        # GET ACTUAL COLUMNS SIZE
         width = self.ui.left_column_frame.width()
         right_column_width = self.ui.right_column_frame.width()
 
