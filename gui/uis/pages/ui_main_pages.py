@@ -192,20 +192,20 @@ class Ui_MainPages(object):
 
         self.verticalLayout_3.addLayout(self.input1_layout_2)
 
-        self.input1_layout_3 = QHBoxLayout()
-        self.input1_layout_3.setObjectName(u"input1_layout_3")
+        self.alphas_layout = QHBoxLayout()
+        self.alphas_layout.setObjectName(u"alphas_layout")
 
-        self.verticalLayout_3.addLayout(self.input1_layout_3)
+        self.verticalLayout_3.addLayout(self.alphas_layout)
 
-        self.input1_layout_4 = QHBoxLayout()
-        self.input1_layout_4.setObjectName(u"input1_layout_4")
+        self.P21_layout = QHBoxLayout()
+        self.P21_layout.setObjectName(u"P21_layout")
 
-        self.verticalLayout_3.addLayout(self.input1_layout_4)
+        self.verticalLayout_3.addLayout(self.P21_layout)
 
-        self.input1_layout_5 = QHBoxLayout()
-        self.input1_layout_5.setObjectName(u"input1_layout_5")
+        self.P31_layout = QHBoxLayout()
+        self.P31_layout.setObjectName(u"P31_layout")
 
-        self.verticalLayout_3.addLayout(self.input1_layout_5)
+        self.verticalLayout_3.addLayout(self.P31_layout)
 
         self.input1_layout_6 = QHBoxLayout()
         self.input1_layout_6.setObjectName(u"input1_layout_6")
@@ -227,20 +227,20 @@ class Ui_MainPages(object):
 
         self.verticalLayout_3.addLayout(self.input1_layout_9)
 
-        self.input1_layout_10 = QHBoxLayout()
-        self.input1_layout_10.setObjectName(u"input1_layout_10")
+        self.label_8 = QLabel(self.frame_4)
+        self.label_8.setObjectName(u"label_8")
 
-        self.verticalLayout_3.addLayout(self.input1_layout_10)
+        self.verticalLayout_3.addWidget(self.label_8, 0, Qt.AlignHCenter)
 
-        self.input1_layout_11 = QHBoxLayout()
-        self.input1_layout_11.setObjectName(u"input1_layout_11")
+        self.Lengths1_layout = QHBoxLayout()
+        self.Lengths1_layout.setObjectName(u"Lengths1_layout")
 
-        self.verticalLayout_3.addLayout(self.input1_layout_11)
+        self.verticalLayout_3.addLayout(self.Lengths1_layout)
 
-        self.input1_layout_12 = QHBoxLayout()
-        self.input1_layout_12.setObjectName(u"input1_layout_12")
+        self.Lengths2_layout = QHBoxLayout()
+        self.Lengths2_layout.setObjectName(u"Lengths2_layout")
 
-        self.verticalLayout_3.addLayout(self.input1_layout_12)
+        self.verticalLayout_3.addLayout(self.Lengths2_layout)
 
 
         self.horizontalLayout.addWidget(self.frame_4)
@@ -282,11 +282,12 @@ class Ui_MainPages(object):
         MainPages.setWindowTitle(QCoreApplication.translate("MainPages", u"Form", None))
         self.label.setText(QCoreApplication.translate("MainPages", u"Welcome To PyOneDark GUI", None))
         self.label_2.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:14pt; font-weight:700;\">INPUTS</span></p></body></html>", None))
-        self.label_5.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:11pt;\">Angles Theta</span></p></body></html>", None))
+        self.label_5.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:11pt;\">Angles Theta (\u00b0)</span></p></body></html>", None))
         self.label_6.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:11pt;\">Positions</span></p></body></html>", None))
         self.label_7.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:11pt;\">inicial Points</span></p></body></html>", None))
         self.label_3.setText(QCoreApplication.translate("MainPages", u"TextLabel", None))
         self.label_4.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:14pt; font-weight:700;\">OUTPUTS</span></p></body></html>", None))
+        self.label_8.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:11pt;\">Lengths</span></p></body></html>", None))
         self.empty_page_label.setText(QCoreApplication.translate("MainPages", u"Empty Page", None))
     # retranslateUi
 

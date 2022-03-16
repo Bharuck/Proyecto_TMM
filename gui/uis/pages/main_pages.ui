@@ -206,7 +206,7 @@
              <item alignment="Qt::AlignHCenter">
               <widget class="QLabel" name="label_5">
                <property name="text">
-                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Angles Theta&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Angles Theta (°)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
               </widget>
              </item>
@@ -305,13 +305,13 @@
               <layout class="QHBoxLayout" name="input1_layout_2"/>
              </item>
              <item>
-              <layout class="QHBoxLayout" name="input1_layout_3"/>
+              <layout class="QHBoxLayout" name="alphas_layout"/>
              </item>
              <item>
-              <layout class="QHBoxLayout" name="input1_layout_4"/>
+              <layout class="QHBoxLayout" name="P21_layout"/>
              </item>
              <item>
-              <layout class="QHBoxLayout" name="input1_layout_5"/>
+              <layout class="QHBoxLayout" name="P31_layout"/>
              </item>
              <item>
               <layout class="QHBoxLayout" name="input1_layout_6"/>
@@ -325,14 +325,18 @@
              <item>
               <layout class="QHBoxLayout" name="input1_layout_9"/>
              </item>
-             <item>
-              <layout class="QHBoxLayout" name="input1_layout_10"/>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Lengths&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
              </item>
              <item>
-              <layout class="QHBoxLayout" name="input1_layout_11"/>
+              <layout class="QHBoxLayout" name="Lengths1_layout"/>
              </item>
              <item>
-              <layout class="QHBoxLayout" name="input1_layout_12"/>
+              <layout class="QHBoxLayout" name="Lengths2_layout"/>
              </item>
             </layout>
            </widget>
