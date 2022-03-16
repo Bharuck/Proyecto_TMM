@@ -1,0 +1,15 @@
+<svg width="30" height="30"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     overflow="hidden"><defs><clipPath id="clip0">
+    <rect x="376" y="208" width="30" height="30"/>
+</clipPath>
+</defs>
+    <g
+        clip-path="url(#clip0)"
+        transform="translate(-376 -208)">
+    <text fill="#FFFFFF"
+          font-family="Cambria Math,Cambria Math_MSFontService,sans-serif"
+          font-weight="400"
+          font-size="24"
+          transform="translate(379.231 231)">γ<tspan font-size="10" x="12.1" y="5">3</tspan></text></g></svg>

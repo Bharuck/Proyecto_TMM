@@ -22,7 +22,7 @@ class Ui_MainPages(object):
     def setupUi(self, MainPages):
         if not MainPages.objectName():
             MainPages.setObjectName(u"MainPages")
-        MainPages.resize(860, 600)
+        MainPages.resize(1058, 636)
         self.main_pages_layout = QVBoxLayout(MainPages)
         self.main_pages_layout.setSpacing(0)
         self.main_pages_layout.setObjectName(u"main_pages_layout")
@@ -161,10 +161,10 @@ class Ui_MainPages(object):
         self.frame_3.setFrameShadow(QFrame.Raised)
         self.verticalLayout_2 = QVBoxLayout(self.frame_3)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.label_3 = QLabel(self.frame_3)
-        self.label_3.setObjectName(u"label_3")
+        self.image_latout = QVBoxLayout()
+        self.image_latout.setObjectName(u"image_latout")
 
-        self.verticalLayout_2.addWidget(self.label_3)
+        self.verticalLayout_2.addLayout(self.image_latout)
 
         self.button_layout = QHBoxLayout()
         self.button_layout.setObjectName(u"button_layout")
@@ -287,10 +287,10 @@ class Ui_MainPages(object):
         MainPages.setWindowTitle(QCoreApplication.translate("MainPages", u"Form", None))
         self.label.setText(QCoreApplication.translate("MainPages", u"Welcome To PyOneDark GUI", None))
         self.label_2.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:14pt; font-weight:700;\">INPUTS</span></p></body></html>", None))
-        self.label_5.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:11pt;\">Angles Theta (\u00b0)</span></p></body></html>", None))
-        self.label_6.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:11pt;\">Positions</span></p></body></html>", None))
-        self.label_7.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:11pt;\">inicial Points</span></p></body></html>", None))
-        self.label_3.setText(QCoreApplication.translate("MainPages", u"TextLabel", None))
+        self.label_5.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:11pt;\">Initial angles (\u00b0)</span></p></body></html>", None))
+        self.label_6.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:11pt;\">Point of interest\n"
+"</span></p></body></html>", None))
+        self.label_7.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:11pt;\">Fixed pivots</span></p></body></html>", None))
         self.label_4.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:14pt; font-weight:700;\">OUTPUTS</span></p></body></html>", None))
         self.label_8.setText(QCoreApplication.translate("MainPages", u"<html><head/><body><p><span style=\" font-size:11pt;\">Lengths</span></p></body></html>", None))
         self.empty_page_label.setText(QCoreApplication.translate("MainPages", u"Empty Page", None))

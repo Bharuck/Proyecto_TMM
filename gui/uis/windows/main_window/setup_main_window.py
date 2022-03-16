@@ -532,7 +532,7 @@ class SetupMainWindow:
         # ADD CUSTOM WIDGETS IN RIGHT FRAME
         # ///////////////////////////////////////////////////////////////
         self.icon_alpha_2 = PyIconButton(
-            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
+            icon_path=Functions.set_svg_icon("icon_alpha2.svg"),
             parent=self,
             app_parent=self.ui.central_widget,
             tooltip_text="alpha 2",
@@ -551,7 +551,7 @@ class SetupMainWindow:
 
         self.alpha2_edit = PyLineEdit(
             text="",
-            place_holder_text="value alpha 2",
+            place_holder_text="alpha 2",
             radius=8,
             border_size=2,
             color=self.themes["app_color"]["text_foreground"],
@@ -561,7 +561,7 @@ class SetupMainWindow:
             context_color=self.themes["app_color"]["context_color"]
         )
         self.icon_alpha_3 = PyIconButton(
-            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
+            icon_path=Functions.set_svg_icon("icon_alpha3.svg"),
             parent=self,
             app_parent=self.ui.central_widget,
             tooltip_text="alpha 3",
@@ -579,7 +579,7 @@ class SetupMainWindow:
         )
         self.alpha3_edit = PyLineEdit(
             text="",
-            place_holder_text="value alpha 3",
+            place_holder_text="alpha 3",
             radius=8,
             border_size=2,
             color=self.themes["app_color"]["text_foreground"],
@@ -590,10 +590,10 @@ class SetupMainWindow:
         )
         #
         self.icon_P21 = PyIconButton(
-            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
+            icon_path=Functions.set_svg_icon("icon_P21.svg"),
             parent=self,
             app_parent=self.ui.central_widget,
-            tooltip_text="Point 2",
+            tooltip_text="Point 21",
             width=40,
             height=40,
             radius=8,
@@ -608,7 +608,7 @@ class SetupMainWindow:
         )
         self.P21_x_edit = PyLineEdit(
             text="",
-            place_holder_text="value P2_x",
+            place_holder_text="value P21_x",
             radius=8,
             border_size=2,
             color=self.themes["app_color"]["text_foreground"],
@@ -619,7 +619,7 @@ class SetupMainWindow:
         )
         self.P21_y_edit = PyLineEdit(
             text="",
-            place_holder_text="value P2_y",
+            place_holder_text="value P21_y",
             radius=8,
             border_size=2,
             color=self.themes["app_color"]["text_foreground"],
@@ -629,10 +629,10 @@ class SetupMainWindow:
             context_color=self.themes["app_color"]["context_color"]
         )
         self.icon_P31 = PyIconButton(
-            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
+            icon_path=Functions.set_svg_icon("icon_P31.svg"),
             parent=self,
             app_parent=self.ui.central_widget,
-            tooltip_text="Point 3",
+            tooltip_text="Point 31",
             width=40,
             height=40,
             radius=8,
@@ -647,7 +647,7 @@ class SetupMainWindow:
         )
         self.P31_x_edit = PyLineEdit(
             text="",
-            place_holder_text="value P3_x",
+            place_holder_text="value P31_x",
             radius=8,
             border_size=2,
             color=self.themes["app_color"]["text_foreground"],
@@ -658,7 +658,7 @@ class SetupMainWindow:
         )
         self.P31_y_edit = PyLineEdit(
             text="",
-            place_holder_text="value P3_y",
+            place_holder_text="value P31_y",
             radius=8,
             border_size=2,
             color=self.themes["app_color"]["text_foreground"],
@@ -669,7 +669,7 @@ class SetupMainWindow:
         )
         # //////////////////////////////////////////////////////////////
         self.icon_beta2 = PyIconButton(
-            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
+            icon_path=Functions.set_svg_icon("icon_beta2.svg"),
             parent=self,
             app_parent=self.ui.central_widget,
             tooltip_text="beta 2",
@@ -697,7 +697,7 @@ class SetupMainWindow:
             context_color=self.themes["app_color"]["context_color"]
         )
         self.icon_beta3 = PyIconButton(
-            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
+            icon_path=Functions.set_svg_icon("icon_beta3.svg"),
             parent=self,
             app_parent=self.ui.central_widget,
             tooltip_text="beta 3",
@@ -754,7 +754,7 @@ class SetupMainWindow:
             context_color=self.themes["app_color"]["context_color"]
         )
         self.icon_theta_out = PyIconButton(
-            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
+            icon_path=Functions.set_svg_icon("icon_theta.svg"),
             parent=self,
             app_parent=self.ui.central_widget,
             tooltip_text="theta",
@@ -811,7 +811,7 @@ class SetupMainWindow:
             context_color=self.themes["app_color"]["context_color"]
         )
         self.icon_phi_out = PyIconButton(
-            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
+            icon_path=Functions.set_svg_icon("icon_phi.svg"),
             parent=self,
             app_parent=self.ui.central_widget,
             tooltip_text="phi",
@@ -840,7 +840,7 @@ class SetupMainWindow:
         )
         # //////////// aca abajo se repite
         self.icon_gamma2 = PyIconButton(
-            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
+            icon_path=Functions.set_svg_icon("icon_gamma2.svg"),
             parent=self,
             app_parent=self.ui.central_widget,
             tooltip_text="gamma 2",
@@ -868,7 +868,7 @@ class SetupMainWindow:
             context_color=self.themes["app_color"]["context_color"]
         )
         self.icon_gamma3 = PyIconButton(
-            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
+            icon_path=Functions.set_svg_icon("icon_gamma3.svg"),
             parent=self,
             app_parent=self.ui.central_widget,
             tooltip_text="gamma 3",
@@ -925,7 +925,7 @@ class SetupMainWindow:
             context_color=self.themes["app_color"]["context_color"]
         )
         self.icon_sigma_out = PyIconButton(
-            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
+            icon_path=Functions.set_svg_icon("icon_sigma.svg"),
             parent=self,
             app_parent=self.ui.central_widget,
             tooltip_text="sigma",
@@ -982,7 +982,7 @@ class SetupMainWindow:
             context_color=self.themes["app_color"]["context_color"]
         )
         self.icon_psi_out = PyIconButton(
-            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
+            icon_path=Functions.set_svg_icon("icon_psi.svg"),
             parent=self,
             app_parent=self.ui.central_widget,
             tooltip_text="psi",
@@ -1170,6 +1170,8 @@ class SetupMainWindow:
 
         # Add to central layout
         self.ui.load_pages.button_layout.addWidget(self.calculate_button)
+        self.logo_svg = QSvgWidget(Functions.set_svg_image("logo_home.svg"))
+        self.ui.load_pages.image_latout.addWidget(self.logo_svg, Qt.AlignCenter, Qt.AlignCenter)
 
         # Add to right layout
         self.ui.load_pages.alphas_layout.addWidget(self.icon_alpha_2)
