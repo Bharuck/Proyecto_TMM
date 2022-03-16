@@ -187,11 +187,6 @@ class Ui_MainPages(object):
 
         self.verticalLayout_3.addWidget(self.label_4, 0, Qt.AlignHCenter)
 
-        self.input1_layout_2 = QHBoxLayout()
-        self.input1_layout_2.setObjectName(u"input1_layout_2")
-
-        self.verticalLayout_3.addLayout(self.input1_layout_2)
-
         self.alphas_layout = QHBoxLayout()
         self.alphas_layout.setObjectName(u"alphas_layout")
 
@@ -207,25 +202,35 @@ class Ui_MainPages(object):
 
         self.verticalLayout_3.addLayout(self.P31_layout)
 
-        self.input1_layout_6 = QHBoxLayout()
-        self.input1_layout_6.setObjectName(u"input1_layout_6")
+        self.beta_layout = QHBoxLayout()
+        self.beta_layout.setObjectName(u"beta_layout")
 
-        self.verticalLayout_3.addLayout(self.input1_layout_6)
+        self.verticalLayout_3.addLayout(self.beta_layout)
 
-        self.input1_layout_7 = QHBoxLayout()
-        self.input1_layout_7.setObjectName(u"input1_layout_7")
+        self.others1_layout = QHBoxLayout()
+        self.others1_layout.setObjectName(u"others1_layout")
 
-        self.verticalLayout_3.addLayout(self.input1_layout_7)
+        self.verticalLayout_3.addLayout(self.others1_layout)
 
-        self.input1_layout_8 = QHBoxLayout()
-        self.input1_layout_8.setObjectName(u"input1_layout_8")
+        self.others2_layout = QHBoxLayout()
+        self.others2_layout.setObjectName(u"others2_layout")
 
-        self.verticalLayout_3.addLayout(self.input1_layout_8)
+        self.verticalLayout_3.addLayout(self.others2_layout)
 
-        self.input1_layout_9 = QHBoxLayout()
-        self.input1_layout_9.setObjectName(u"input1_layout_9")
+        self.gamma_layout = QHBoxLayout()
+        self.gamma_layout.setObjectName(u"gamma_layout")
 
-        self.verticalLayout_3.addLayout(self.input1_layout_9)
+        self.verticalLayout_3.addLayout(self.gamma_layout)
+
+        self.others3_layout = QHBoxLayout()
+        self.others3_layout.setObjectName(u"others3_layout")
+
+        self.verticalLayout_3.addLayout(self.others3_layout)
+
+        self.others4_layout = QHBoxLayout()
+        self.others4_layout.setObjectName(u"others4_layout")
+
+        self.verticalLayout_3.addLayout(self.others4_layout)
 
         self.label_8 = QLabel(self.frame_4)
         self.label_8.setObjectName(u"label_8")
